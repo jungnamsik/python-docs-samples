@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 # Copyright 2020 Google LLC
 #
 # Licensed under the Apache License, Version 2.0 (the "License");
@@ -24,4 +25,4 @@ def test_translate_text(capsys):
     translate_v3_translate_text.translate_text(
         "Hello World!", PROJECT_ID)
     out, _ = capsys.readouterr()
-    assert "Bonjour le monde" in out
+    assert u"안녕하세요" in out

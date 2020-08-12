@@ -30,7 +30,7 @@ def translate_text(text="YOUR_TEXT_TO_TRANSLATE", project_id="YOUR_PROJECT_ID"):
         contents=[text],
         mime_type="text/plain",  # mime types: text/plain, text/html
         source_language_code="en-US",
-        target_language_code="fr",
+        target_language_code="ko",
     )
     # Display the translation for each input text provided
     for translation in response.translations:
